@@ -1,0 +1,23 @@
+{
+  "name": "foia-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FOIA backend (fictional data, local only)",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "migrate": "node src/cli.ts migrate",
+    "seed": "node src/cli.ts seed",
+    "serve": "node src/cli.ts serve",
+    "cli": "node src/cli.ts",
+    "demo": "node scripts/demo.ts",
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2"
+  }
+}
