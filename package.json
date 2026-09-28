@@ -1,0 +1,18 @@
+{
+  "name": "foi-local-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地虚构公共信息公开申请与复议后端（TypeScript + Node.js + SQLite，仅离线演示）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "migrate": "node --experimental-sqlite src/migrate.ts",
+    "seed": "node --experimental-sqlite src/cli/seed.ts",
+    "demo": "node --experimental-sqlite src/cli/demo.ts",
+    "start": "node --experimental-sqlite src/server.ts",
+    "cli": "node --experimental-sqlite src/cli/index.ts",
+    "test": "node --experimental-sqlite --test --test-reporter=spec test/**/*.test.ts"
+  }
+}
